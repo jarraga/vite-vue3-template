@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-100 text-gray-700 h-screen w-full flex justify-center items-center"
+    class="bg-gray-100 text-gray-700 h-screen w-full flex justify-center items-center p-4"
   >
     <router-view />
   </div>
