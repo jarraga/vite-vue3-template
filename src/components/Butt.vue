@@ -7,9 +7,7 @@
       bgColors[color]
     } ${textColors[color]} rounded ${small ? 'px-3 py-1' : 'px-4 py-2'} ${
       full ? 'w-full' : 'w-max-min'
-    } hover:${
-      hoverColors[color]
-    } transition border-2 border-transparent focus:${
+    } ${hoverColors[color]} transition border-2 border-transparent ${
       borderColors[color]
     } outline-none uppercase font-semibold text-sm`"
   >
@@ -33,24 +31,24 @@ export default {
         pink: "bg-pink-200",
       },
       hoverColors: {
-        gray: "bg-gray-300",
-        red: "bg-red-300",
-        yellow: "bg-yellow-300",
-        green: "bg-green-300",
-        blue: "bg-blue-300",
-        indigo: "bg-indigo-300",
-        purple: "bg-purple-300",
-        pink: "bg-pink-300",
+        gray: "hover:bg-gray-300",
+        red: "hover:bg-red-300",
+        yellow: "hover:bg-yellow-300",
+        green: "hover:bg-green-300",
+        blue: "hover:bg-blue-300",
+        indigo: "hover:bg-indigo-300",
+        purple: "hover:bg-purple-300",
+        pink: "hover:bg-pink-300",
       },
       borderColors: {
-        gray: "border-gray-500",
-        red: "border-red-500",
-        yellow: "border-yellow-500",
-        green: "border-green-500",
-        blue: "border-blue-500",
-        indigo: "border-indigo-500",
-        purple: "border-purple-500",
-        pink: "border-pink-500",
+        gray: "focus:border-gray-500",
+        red: "focus:border-red-500",
+        yellow: "focus:border-yellow-500",
+        green: "focus:border-green-500",
+        blue: "focus:border-blue-500",
+        indigo: "focus:border-indigo-500",
+        purple: "focus:border-purple-500",
+        pink: "focus:border-pink-500",
       },
       textColors: {
         gray: "text-gray-700",
